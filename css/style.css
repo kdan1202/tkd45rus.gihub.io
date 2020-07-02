@@ -378,6 +378,7 @@ body {
     font-size: 20px;
     background-color: white;
     color: #000;
+
 }
 /*Header start*/
 
@@ -389,6 +390,7 @@ body {
     background-color: #272727;
     padding: 0 30px;
     opacity: .85;
+    z-index: 2;
 }
 .header__content {
     
@@ -405,7 +407,6 @@ body {
     align-content: center;
 }
 .header__list{
-    color: white;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -430,6 +431,7 @@ body {
     color: white;
     text-decoration: none;
 }
+
 .header__link-with-img {
     width: 30px;
     height: 30px;
@@ -453,8 +455,31 @@ body {
     margin: 0 auto;
     max-width: 1380px;
 }
+.banner {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.banner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    pointer-events: none;
+}
+.banner .section1 {
+    position: relative;
+    z-index: 1;
+}
 .section1__head {
-    margin-top: 115px;
+    margin-top: 250px;
     margin-bottom: 25px;
     display: flex;
     flex-wrap: wrap;
@@ -485,15 +510,44 @@ body {
     margin-right: 30px;
     margin-bottom: 50px;
 }
+.content__news {
+    width: 100%;
+    height: 33%;
+}
+.news__heading {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px; 
+    margin: 30px;
+}
+.news__content {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 30px;
+    max-width: 800px;
+}
 .section1__partners {
     width: 300px;
     height: 660px;
     border: 2px solid #000000;
 }
-.section1__video {
+.section__videos {
     width: 100%;
     height: 230px;
-    border: 2px solid #000000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.item__video {
+    border: 5px solid black;
+    margin-right: 15px;
+}
+.item__video:last-child {
+    margin-right: 0;
 }
 
 /*Section 1 end*/

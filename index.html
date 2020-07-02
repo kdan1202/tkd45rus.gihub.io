@@ -17,6 +17,7 @@
     <title>Document</title>
 </head>
 <body>
+    <!--Header start-->
     <header class="header">
         <div class="wrapper header__content">
             <nav class="header__navigation">
@@ -45,23 +46,38 @@
             </div>
         </div>
     </header>
+    <!--Header end-->
 
+    <!--Section1 start-->
+    <div class="banner">
+        <video autoplay muted loop>
+            <source src="./video/video.mp4" type="video/mp4">
+        </video>
+    
     <section class="wrapper section1" id="main">
         <div class="section1__head">
             <img src="./img/kbi-logo.jpg" alt="logo" class="kbi-logo">
             <h1 class="section1__h1">Федерация тхэквондо МФТ Курганской области</h1>
         </div>
         <div class="section1__main">
-            <div class="section1__main-content"></div>
-            <aside class="section1__partners"></aside>
-            <div class="section1__video"></div>
+            <div class="section1__main-content">
+            </div>
+            <div class="section1__partners"></div>
         </div>
+        
     </section>
-
+    </div>
+    <div class="wrapper section__videos">
+            <iframe width="400" height="225" src="https://www.youtube.com/embed/uXrSEDmHonA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="item__video"></iframe>
+            <iframe width="400" height="225" src="https://www.youtube.com/embed/MzSTxipt7vA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="item__video"></iframe>
+            <iframe width="400" height="225" src="https://www.youtube.com/embed/dQAbtHl_hPs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="item__video"></iframe>
+    </div>
     <div class="logo__section">
             <img src="./img/ITF-logo.png" alt="ITF" class="logo">
     </div>
+    <!--Section1 end-->
 
+    <!--Section2 start-->
     <section class="wrapper section2" id="history">
         <div class="section2__content">
             <div class="section2__content-title">
@@ -105,6 +121,7 @@
     <div class="logo__section">
             <img src="./img/kbi-logo.jpg" alt="logo" class="kbi-logo">
     </div>
+    <!--Section2 end-->
 
     <script src="./js/main.js"></script>
 </body>
